@@ -227,13 +227,15 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: 18px;
-  font-size: 14px;
-  color: rgba(246,241,233,0.85);
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--cream);
   flex-wrap: wrap;
 }
-.trust-item { display: flex; align-items: center; gap: 8px; font-weight: 600; }
-.trust-stars { color: var(--gold-light); letter-spacing: 1px; }
-.trust-divider { width: 1px; height: 18px; background: rgba(246,241,233,0.25); }
+.trust-item { display: flex; align-items: center; gap: 8px; }
+.trust-stars { color: var(--gold-light); letter-spacing: 1px; font-size: 15px; }
+.trust-rating { color: var(--gold-light); font-weight: 800; }
+.trust-divider { width: 1px; height: 18px; background: rgba(246,241,233,0.3); }
 
 .hero-photo-frame {
   aspect-ratio: 4/5;
@@ -499,7 +501,7 @@ a { text-decoration: none; color: inherit; }
 }
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: start;
   padding-bottom: 40px;
@@ -580,7 +582,7 @@ a { text-decoration: none; color: inherit; }
   .hero h1 { font-size: clamp(26px, 7vw, 32px); }
   .hero-lead { font-size: 15.5px; margin-bottom: 26px; }
   .hero-photo-frame { max-width: 100%; }
-  .hero-trust { gap: 10px; font-size: 13px; }
+  .hero-trust { gap: 10px; font-size: 14.5px; }
   .trust-item { gap: 6px; }
 
   .diferenciais-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -606,7 +608,6 @@ a { text-decoration: none; color: inherit; }
   .faq-item summary { font-size: 15px; gap: 10px; }
 
   .footer-inner { gap: 24px; padding-bottom: 28px; }
-  .footer-inner .btn { width: 100%; }
 
   .whatsapp-float { width: 50px; height: 50px; bottom: 16px; right: 16px; }
   .whatsapp-float svg { width: 26px; height: 26px; }
